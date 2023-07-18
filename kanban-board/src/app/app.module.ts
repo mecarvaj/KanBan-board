@@ -12,6 +12,10 @@ import { PanelComponent } from './components/panel/panel.component';
 import { NewPanelComponent } from './components/new-panel/new-panel.component';
 import { NewTaskComponent } from './components/new-task/new-task.component';
 import { UserTypePickerComponent } from './components/user-type-picker/user-type-picker.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { UserTypePickerComponent } from './components/user-type-picker/user-type
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
